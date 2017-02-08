@@ -4,7 +4,8 @@
     "Kushal Raghav Poojari <kushalraghavpoojari@gmail.com>"
   ],
   "description": "A Simple Modal",
-  "main": "./dist/js/kr-modal.min.js",
+  "main": ["./dist/js/kr-modal.min.js",
+            "./styles/kr-modal.css"],
   "license": "MIT",
   "homepage": "",
   "ignore": [
