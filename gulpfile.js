@@ -22,10 +22,18 @@ gulp.task('minify-css',['clean-styles'], function() {
 });
 
 gulp.task('templatecache', function() {
+  var tempCacheOptions = {
+    file: 'template.js',
+    options: {
+      module:'kr-modal',
+      standAlone: false
+    }
+  };
   return gulp
         .src('modal/modal-dialog.directive.html')
         .pipe(minifyHtml({empty: true}))
-        .pipe(templateCache())
+        .pipe(templateCache(tempCacheOptions.file,
+                  tempCacheOptions.options))
         .pipe(gulp.dest('dist/temp'));
 });
 
