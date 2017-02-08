@@ -27,7 +27,6 @@ Include as dependency
   * Add `kr-module` as dependency.
 
 #### Example
-  > Assuming you want to use hear-beat effect
 
   ```
   <modal-dialog title="" content="" show=""></modal-dialog>
